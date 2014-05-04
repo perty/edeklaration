@@ -1,4 +1,4 @@
-Så här i deklarationstider ska vi överta Skatteverkets uppgift och skapa ett program för e-deklaration. 
+﻿Så här i deklarationstider ska vi överta Skatteverkets uppgift och skapa ett program för e-deklaration. 
 För att förenkla uppgiften lite grann begränsar vi den till uträkning av skatt baserat på inkomst och län. 
 Programmet ska vara interaktivt på något sätt (konsol, fönster, webapplikation) och ta följande indata:
 * Bruttoårsinkomst 
@@ -9,6 +9,9 @@ Den enklaste varianten är en konsolversion som tar två argument t ex
 
 java -cp . se.crisp.edeklaration.TaxCalculator 500000 Stockholms
 Slutlig skatt: 162708,91 kr
+
+För att övningen inte ska bli en räkne- och tolkningsövning finns ett antal exempel bifogade.
+Se Exempel.xlsx eller Exempel.pdf.
 
 Affärsregler och siffror
 ------------------------
