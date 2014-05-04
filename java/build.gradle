@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile "junit:junit:4.10"
+    //testCompile "org.mockito:mockito-all:1.9.5"
+}
+
+test {
+    exclude 'se/crisp/edeklaration/endtoend/util/**'
+}
