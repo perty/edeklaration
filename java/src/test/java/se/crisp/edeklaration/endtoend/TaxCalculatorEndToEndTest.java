@@ -32,7 +32,7 @@ public class TaxCalculatorEndToEndTest {
                                 getBuildDir().getAbsolutePath(),
                                 "se.crisp.edeklaration.TaxCalculator", "0", "Stockholms"));
         executor.run();
-        assertEquals("Skattesats: 0,00 kr", executor.getOutput().get(0));
+        assertEquals("Slutlig skatt: 0,00 kr", executor.getOutput().get(0));
     }
 
     private String getJavaExecutablePath() {

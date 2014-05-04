@@ -1,0 +1,43 @@
+Så här i deklarationstider ska vi överta Skatteverkets uppgift och skapa ett program för e-deklaration. 
+För att förenkla uppgiften lite grann begränsar vi den till uträkning av skatt baserat på inkomst och län. 
+Programmet ska vara interaktivt på något sätt (konsol, fönster, webapplikation) och ta följande indata:
+* Bruttoårsinkomst 
+* Län 
+Baserat på dessa ska det presentera den slutliga skatten.
+
+Den enklaste varianten är en konsolversion som tar två argument t ex
+
+java -cp . se.crisp.edeklaration.TaxCalculator 500000 Stockholms
+Slutlig skatt: 162708,91 kr
+
+Affärsregler och siffror
+------------------------
+För inkomståret 2013 finns det två skiktgränser. Den nedre skiktgränsen är 413 200 kronor. På inkomster över denna gräns tas statlig inkomstskatt ut med 20 procent. Den övre skiktgränsen är 591 600 kronor. På inkomster över denna gräns tas statlig inkomstskatt ut med ytterligare 5 procent (den så kallade värnskatten), det vill säga sammanlagt 25 procent.
+
+Det innebär att du för inkomstår 2013 kan ha en inkomst på 426 300 kronor respektive 604 700  kronor (den så kallade brytpunkten) utan att betala statlig inkomstskatt respektive förhöjd statlig inkomstskatt. Detta beror på grundavdraget.
+
+För inkomståret 2013 är grundavdraget vid beräkning av kommunal och statlig skatt alltså 13 100.
+
+Kommunala skattesatser 2013 länsvis
+-----------------------------------
+Stockholms			0.3039
+Uppsala				0.3218
+Södermanlands 		0.3273
+Östergötlands 		0.3163
+Jönköpings			0.3231
+Kronobergs			0.3179
+Kalmar				0.3246
+Gotlands			0.3310
+Blekinge			0.3313
+Skåne				0.3074
+Hallands			0.3122
+Västra Götalands	0.3232
+Värmlands			0.3319
+Örebro				0.3232
+Västmanlands		0.3201
+Dalarnas			0.3380
+Gävleborgs			0.3318
+Västernorrlands		0.3345
+Jämtlands			0.3347
+Västerbottens		0.3314
+Norrbottens			0.3270
