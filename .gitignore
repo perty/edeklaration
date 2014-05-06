@@ -3,4 +3,7 @@
 *.iml
 build
 out
+bin
+obj
+*.suo
 
