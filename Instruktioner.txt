@@ -44,3 +44,17 @@ Västernorrlands		0.3345
 Jämtlands			0.3347
 Västerbottens		0.3314
 Norrbottens			0.3270
+
+Tips och övriga instruktioner
+-----------------------------
+* Glöm inte bort att slica och sträva efter att leverera. Det är roligare att producera ett program som bara klarar att räkna ut skatten om man bor i Skåne och som gör det rätt, än ett program som tar hänsyn till alla affärsregler, men inte fungerar. 
+* Undvik att fastna i input/output. Data måste in och resulatet presenteras, men 100%-ig felhantering bör lämnas till sist. 
+* Glöm inte bort Single Responsibility Principle. Detta gäller främst om man kör enligt Londonskolan.
+
+Tips till de som kör Londonskolan
+---------------------------------
+Problemet är främst algoritmiskt och beräkningen måste till slut göras med vanliga asserts. Dock finns det utrymme för några kollaborerande objekt:
+* Någonting får indata från användaren och presenterar resultatet.
+* Någonting gör beräkningen
+* Någonting känner till skattesatserna för de olika länen.
+Hur många klasser dessa någonting blir, och hur de kommunicerar är alltså utmaningen här. 
