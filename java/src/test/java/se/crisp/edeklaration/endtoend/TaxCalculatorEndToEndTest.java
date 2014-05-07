@@ -38,7 +38,7 @@ public class TaxCalculatorEndToEndTest {
     private List<String> getCommand() {
         return Arrays.asList("java", "-cp",
                 getBuildDir().getAbsolutePath(),
-                "se.crisp.edeklaration.TaxCalculator", "0", "Stockholms");
+                "se.crisp.edeklaration.MainController", "0", "Stockholms");
     }
 
     private String getJavaExecutablePath() {
@@ -46,7 +46,7 @@ public class TaxCalculatorEndToEndTest {
     }
 
     private File getTestedClass() {
-        return checkFile(new File(getBuildDir(), "se/crisp/edeklaration/TaxCalculator.class"));
+        return checkFile(new File(getBuildDir(), "se/crisp/edeklaration/MainController.class"));
     }
 
     private File getBuildDir() {
