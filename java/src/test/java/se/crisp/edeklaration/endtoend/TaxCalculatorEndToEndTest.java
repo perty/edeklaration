@@ -28,7 +28,7 @@ public class TaxCalculatorEndToEndTest {
     }
 
     @Test
-    public void ingenInkomstIngenSkatt() {
+    public void no_income_then_no_tax() {
         SimpleOsCommandExecutor executor =
                 new SimpleOsCommandExecutor(getJavaExecutablePath(), getCommand());
         executor.run();
