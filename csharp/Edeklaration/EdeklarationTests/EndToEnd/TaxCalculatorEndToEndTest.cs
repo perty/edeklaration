@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace Crisp.Tdd.EdeklarationTests.EndToEnd
 {
     [TestFixture]
-    public class TacCalculatorEndToEndTest
+    public class TaxCalculatorEndToEndTest
     {
         private string GetTestedExe()
         {

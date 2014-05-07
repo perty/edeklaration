@@ -70,7 +70,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="EndToEnd\Util\SimpleOsCommandExecutor.cs" />
-    <Compile Include="EndToEnd\TacCalculatorEndToEndTest.cs" />
+    <Compile Include="EndToEnd\TaxCalculatorEndToEndTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
