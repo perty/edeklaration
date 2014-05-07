@@ -5,5 +5,8 @@ package se.crisp.edeklaration;
  */
 public class TaxCalculator {
 
+    public static void main(String[] args){
+        System.out.println("Slutlig skatt: 0,00 kr");
+    }
 }
 
